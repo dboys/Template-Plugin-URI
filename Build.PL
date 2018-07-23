@@ -17,6 +17,7 @@ my $builder = Module::Build->new(
     },
     requires => {
         'URI' =>  1.74,
+        'Template' => 2.26
     },
     add_to_cleanup     => [ 'Template-Plugin-URI-*' ],
     create_makefile_pl => 'traditional',

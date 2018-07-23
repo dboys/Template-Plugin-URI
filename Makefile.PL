@@ -15,8 +15,9 @@ WriteMakefile
    },
   'PREREQ_PM' => {
                    'Test::More' => 0,
-                   'Module::Build' => '0.4220',
-                   'URI' => '1.74'
+                   'Module::Build' => 0,
+                   'URI' => '1.74',
+                   'Template' => '2.26'
                  },
   'INSTALLDIRS' => 'site',
   'NAME' => 'Template::Plugin::URI',
