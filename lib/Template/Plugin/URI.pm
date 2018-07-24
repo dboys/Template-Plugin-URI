@@ -34,12 +34,18 @@ __END__
 Template::Plugin::URI - A Template Plugin To Use URI Objects
  
 =head1 SYNOPSIS
+
+# Standart URI constructors
+[% USE uri = URI('foo','http') %]
+[% USE uri = URI('http://www.perl.com') %]
+[% USE file_path = URI('foo/bar','file') %]
+
+# 'new_abs' URI constructor
+[% USE uri_abs = URI('test','http://www.perl.com', new_abs = 1) %]
  
-=head1 DESCRIPTION
- 
-=head1 METHODS
- 
-=back
+=head1 OVERVIEW
+
+This module allows you to use URI objects into TT templates
  
 =head1 SEE ALSO
  
@@ -51,12 +57,5 @@ L<Template>
 Copyright 2018 Denis Boyun, C<< <denisboyun at gmail.com> >>
 
 This is free software; you can redistribute it and/or modify it under the same terms as the Perl 5 programming language system itself.
- 
-=head1 LICENSE
- 
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
- 
-See http://www.perl.com/perl/misc/Artistic.html
  
 =cut
