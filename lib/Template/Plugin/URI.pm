@@ -3,7 +3,7 @@ package Template::Plugin::URI;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use URI;
 
@@ -35,17 +35,17 @@ Template::Plugin::URI - A Template Plugin To Use URI Objects
  
 =head1 SYNOPSIS
 
-# Standart URI constructors
-[% USE uri = URI('foo','http') %]
-[% USE uri = URI('http://www.perl.com') %]
-[% USE file_path = URI('foo/bar','file') %]
+    # Standart URI constructors
+    [% USE uri = URI('foo','http') %]
+    [% USE uri = URI('http://www.perl.com') %]
+    [% USE file_path = URI('foo/bar','file') %]
 
-# 'new_abs' URI constructor
-[% USE uri_abs = URI('test','http://www.perl.com', new_abs = 1) %]
+    # 'new_abs' URI constructor
+    [% USE uri_abs = URI('test','http://www.perl.com', new_abs = 1) %]
  
 =head1 OVERVIEW
 
-This module allows you to use URI objects into TT templates
+This module allows you to use URI objects in TT templates
  
 =head1 SEE ALSO
  

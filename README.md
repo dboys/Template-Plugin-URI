@@ -4,7 +4,7 @@ Template::Plugin::URI - A Template Plugin To Use URI Objects
 
 # VERSION
 
-version 0.01
+version 0.02
 
 # INSTALLATION
 
@@ -27,7 +27,7 @@ To install this module, run the following commands:
 
 # OVERVIEW
 
-This module allows you to use URI objects into TT templates
+This module allows you to use URI objects in TT templates
 
 # SEE ALSO
 
